@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<head>
+	<title>Lana's online vriendschapsboek</title>
+</head>
+
+<body>
+	<header>
+		<div class="turquoise-border">
+			<h1>Lana's online vriendschapsboek</h1>
+		</div>
+		<hr>
+	</header>
+	<main>
+		<div class="teal-border">
+			<h2>Wie ben jij?</h2>
+			<form name="contact" method="POST" data-netlify="true">
+				<p><label>Hoe heet je? <input type="text" /></label></p>
+				<p><label>Wat is je e-mailadres? <input type="email" /></label></p>
+				<p><label>Wat is je telefoonnummer? <input type="tel" /></label></p>
+				<p><label>Hoe oud ben je? <input type="number" /></label></p>
+				<p><label>Wat is je geboortedatum? <input type="date" /></label></p>
+				<p>Wat is je gender? 
+					<label><input name="gender" type="radio" /> man </label>
+					<label><input name="gender" type="radio" /> vrouw </label>
+					<label><input name="gender" type="radio" /> nonbinair </label>
+					<label><input name="gender" type="radio" /> dat gaat je niks aan! </label>
+					<label><input name="gender" type="radio" /> genderfluid </label>
+					<label><input name="gender" type="radio" /> anders, namelijk... </label>
+					<label><input name="gender" type="text" /></label>
+				</p>
+				<p>Wat is je favoriete keuken? (Meerdere opties mogelijk!) 
+					<label><input name="cuisine" type="checkbox" />Frans</label>
+					<label><input name="cuisine" type="checkbox" />Italiaans</label>
+					<label><input name="cuisine" type="checkbox" />Spaans</label>
+					<label><input name="cuisine" type="checkbox" />Arabisch</label>
+				</p>
+				<p>Wat is je favoriete kleur qua kleding? (Selecteer door op het zwarte vakje te klikken) 
+					<input name="color picker" type="color" />
+				</p>
+				<p>Uitdaging: vertel hier in maximaal 1000 tekens hoe jouw leven tot nu toe is verlopen.</p>
+					<textarea rows="10" cols="30" maxlength="1000">
+					</textarea>
+				<p><label>Upload hier je allerlekkerste vegan recept dat ik absoluut moet proberen! <input name="recipe" type="file" /></label></p>
+				<p><label>Over vegan recepten gesproken: ik ben wel benieuwd naar jouw go-to receptensite! <input name="recipe-site" type="url" /></label></p>
+				<input name="reset" type="reset" value="Klik hier om het formulier te resetten" />
+				<input name="submit" type="submit" value="Alles goed ingevuld? Versturen maar!" />
+			</form>
+		</div>
+	</main>
+	<footer>
+	</footer>
+</body>
+
+</html>
